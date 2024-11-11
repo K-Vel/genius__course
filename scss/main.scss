@@ -48,8 +48,33 @@
 /* Styling */
 @import "./utils/utils.scss";
 
+
 // Content
-@import "./components/header.scss";
 
 
 // Sections
+//Header
+@import "./components/sections/header.scss";
+
+//Hero section
+@import "./components/sections/hero-section.scss";
+
+//Benefits section
+@import "./components/sections/benefits-section.scss";
+
+//Traditions section
+@import "./components/sections/traditions-section.scss";
+
+//Formats section
+@import "./components/sections/formats-section.scss";
+
+//Chefs section
+@import "./components/sections/chefs-section.scss";
+
+//Contacts section
+@import "./components/sections/contacts-section.scss";
+
+//Footer 
+@import "./components/sections/footer.scss";
+
+
