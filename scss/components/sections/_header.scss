@@ -3,3 +3,14 @@
 // mobile
 // tablet
 // desktop
+
+.header {
+  &__list-item {
+    color: var(--primary-light);
+  }
+
+  &__list-item:hover {
+    font-weight: 600;
+    color: var(--accent-color-light);
+  }
+}

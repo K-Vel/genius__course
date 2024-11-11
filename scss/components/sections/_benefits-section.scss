@@ -3,3 +3,18 @@
 // mobile
 // tablet
 // desktop
+
+.benefits {
+  &__list {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-dark);
+    background-color: var(--decor-light);
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 20px;
+      color: var(--primary-light);
+      background-color: var(--accent-color-light);
+    }
+  }
+}

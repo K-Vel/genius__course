@@ -8,48 +8,60 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header>
+    <header class="header">
       <div class="container">
         <!-- Navigation -->
-        <nav>
-          <a href="/"
+        <nav class="header__navigation">
+          <a href="/" class="header__logo"
             ><img class="" src="./img/logo.svg" alt="Логотип сучасної пекарні"
           /></a>
-          <ul>
-            <li><a href="#traditions-section">Наші традиції</a></li>
-            <li><a href="#chefs-section">Шеф-кухарі</a></li>
-            <li><a href="#formats-section">Формати</a></li>
-            <li><a href="#contacts-section">Контакти</a></li>
+          <ul class="header__list">
+            <li>
+              <a class="header__list-item" href="#traditions-section"
+                >Наші традиції</a
+              >
+            </li>
+            <li>
+              <a class="header__list-item" href="#chefs-section">Шеф-кухарі</a>
+            </li>
+            <li>
+              <a class="header__list-item" href="#formats-section">Формати</a>
+            </li>
+            <li>
+              <a class="header__list-item" href="#contacts-section">Контакти</a>
+            </li>
           </ul>
         </nav>
-        <button type="button">Замовити дзвінок</button>
+        <button type="button" class="button">Замовити дзвінок</button>
       </div>
     </header>
     <!-- Main Section -->
     <main>
       <div class="container">
-        <section>
-          <h1><span>Сучасна</span> пекарня</h1>
+        <section class="hero">
+          <h1><span class="accent-color-light">Сучасна</span> пекарня</h1>
         </section>
-        <section>
+        <section class="benefits">
           <h2>Наші переваги</h2>
-          <ul>
-            <li>Великий попит на ринку</li>
-            <li>Доступні за бюджетом формати</li>
-            <li>Досвідчена управлінська команда</li>
+          <ul class="benefits__list">
+            <li class="benefits__list-item">Великий попит на ринку</li>
+            <li class="benefits__list-item">Доступні за бюджетом формати</li>
+            <li class="benefits__list-item">Досвідчена управлінська команда</li>
           </ul>
         </section>
         <section id="traditions-section">
           <h2>Новий формат традицій</h2>
           <p>
-            <span lang="en"> shop bakery</span> — це пекарня, яка взяла все
-            найкраще, і зберегла смак традиційної випічки та натуральність
-            інгредієнтів.
+            <span class="accent-color-light" lang="en"> shop bakery</span> — це
+            пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки
+            та натуральність інгредієнтів.
           </p>
           <p>
             Ми працюємо як найвідоміші мережі —
-            <span>5 хвилин і замовлення готове. </span>А ще у наших пекарень
-            стильний дизайн та висока якість обслуговування!
+            <span class="accent-color-light"
+              >5 хвилин і замовлення готове. </span
+            >А ще у наших пекарень стильний дизайн та висока якість
+            обслуговування!
           </p>
           <img
             src="./img/baker.jpg"
@@ -58,7 +70,9 @@
           />
         </section>
         <section id="chefs-section">
-          <h2>Наші найкращі <span>шеф -кухарі</span></h2>
+          <h2>
+            Наші найкращі <span class="accent-color-dark">шеф -кухарі</span>
+          </h2>
           <!-- Chefs List -->
           <ul>
             <!-- Chef -->
@@ -142,7 +156,9 @@
         </section>
         <section id="contacts-section">
           <h2>Приєднуйся до мережі пекарень</h2>
-          <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+          <p class="accent-color-dark">
+            Заповни форму, щоб ми звʼязались з тобою!
+          </p>
           <form></form>
           <iframe
             title="Address"
@@ -155,18 +171,28 @@
       </div>
     </main>
     <!-- Footer Section -->
-    <footer>
+    <footer class="footer">
       <div class="container">
         <!-- Navigation -->
-        <nav>
-          <a href="/"
+        <nav class="footer__navigation">
+          <a href="/" class="footer__logo"
             ><img class="" src="./img/logo.svg" alt="Логотип сучасної пекарні"
           /></a>
-          <ul>
-            <li><a href="#traditions-section">Наші традиції</a></li>
-            <li><a href="#chefs-section">Шеф-кухарі</a></li>
-            <li><a href="#formats-section">Формати</a></li>
-            <li><a href="#contacts-section">Контакти</a></li>
+          <ul class="footer__list">
+            <li>
+              <a class="footer__list-item" href="#traditions-section"
+                >Наші традиції</a
+              >
+            </li>
+            <li>
+              <a class="footer__list-item" href="#chefs-section">Шеф-кухарі</a>
+            </li>
+            <li>
+              <a class="footer__list-item" href="#formats-section">Формати</a>
+            </li>
+            <li>
+              <a class="footer__list-item" href="#contacts-section">Контакти</a>
+            </li>
           </ul>
         </nav>
         <!-- Address -->

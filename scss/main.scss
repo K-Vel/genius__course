@@ -48,9 +48,8 @@
 /* Styling */
 @import "./utils/utils.scss";
 
-
 // Content
-
+@import "./components/buttons.scss";
 
 // Sections
 //Header
@@ -74,7 +73,5 @@
 //Contacts section
 @import "./components/sections/contacts-section.scss";
 
-//Footer 
+//Footer
 @import "./components/sections/footer.scss";
-
-
