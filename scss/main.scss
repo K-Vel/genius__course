@@ -36,11 +36,11 @@
 }
 
 // General
-/* Fonts */
-@import "./utils/fonts.scss";
-
 /* Variables */
 @import "./utils/variables.scss";
+
+/* Fonts */
+@import "./utils/fonts.scss";
 
 /* Global styles */
 @import "./base.scss";

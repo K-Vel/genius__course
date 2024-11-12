@@ -3,3 +3,14 @@
 // mobile
 // tablet
 // desktop
+
+.formats {
+  &__title {
+    text-align: center;
+  }
+}
+
+.format {
+  font-size: 14px;
+  font-weight: 300;
+}

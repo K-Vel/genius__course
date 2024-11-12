@@ -1,3 +1,19 @@
+/* Contacts section */
+
+// mobile
+// tablet
+// desktop
+
+.contacts {
+  &__title {
+    font-weight: 600;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-weight: 700;
+    }
+  }
+}
+
 iframe {
   width: 600px;
   height: 600px;

@@ -13,4 +13,26 @@
     font-weight: 600;
     color: var(--accent-color-light);
   }
+
+  &__address {
+    font-size: 14px;
+    font-weight: 300;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 16px;
+    }
+  }
+
+  &__address-list-item:hover {
+    color: var(--accent-color-light);
+  }
+
+  &__additional-info {
+    font-size: 14px;
+    font-weight: 300;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 16px;
+    }
+  }
 }

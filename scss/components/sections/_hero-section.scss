@@ -3,3 +3,9 @@
 // mobile
 // tablet
 // desktop
+
+.hero {
+  &__title {
+    text-align: center;
+  }
+}
