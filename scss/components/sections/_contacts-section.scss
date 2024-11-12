@@ -5,6 +5,16 @@
 // desktop
 
 .contacts {
+  padding: 20px 0px 0px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 24px 0px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 48px 0px;
+  }
+
   &__title {
     font-weight: 600;
 

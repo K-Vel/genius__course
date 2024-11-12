@@ -5,13 +5,61 @@
 // desktop
 
 .traditions {
+  padding: 20px 0px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 24px 0px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 48px 0px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
   &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 42px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
     font-size: 16px;
     font-weight: 300;
 
     @media screen and (min-width: $bp-desktop) {
       font-size: 18px;
       font-weight: 400;
+    }
+  }
+
+  &__img {
+    display: none;
+    border-radius: 400px 400px 0px 0px;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      max-width: 250px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 339px;
     }
   }
 }

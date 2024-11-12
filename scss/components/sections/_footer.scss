@@ -5,6 +5,14 @@
 // desktop
 
 .footer {
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 24px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 48px;
+  }
+
   &__list-item {
     color: var(--primary-light);
   }

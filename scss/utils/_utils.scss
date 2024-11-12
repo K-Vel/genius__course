@@ -1,3 +1,12 @@
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .accent-color-light {
   color: var(--accent-color-light);
 }
@@ -22,4 +31,7 @@
   @media screen and (min-width: $bp-desktop) {
     font-size: 14px;
   }
+}
+.text-limited {
+  max-width: 300px;
 }
