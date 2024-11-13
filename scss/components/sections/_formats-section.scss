@@ -5,6 +5,8 @@
 // desktop
 
 .formats {
+  padding: 20px 0px;
+
   @media screen and (min-width: $bp-tablet) {
     padding: 24px 0px;
   }
@@ -16,9 +18,61 @@
   &__title {
     text-align: center;
   }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__list-item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
 }
 
 .format {
   font-size: 14px;
   font-weight: 300;
+  // min-height: 444px;
+}
+
+//Moditicator
+
+.format_walrus {
+  background-image: url("/img/walrus.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/img/walrus@2x.png");
+  }
+}
+
+.format_horseshoe {
+  background-image: url("/img/horseshoe.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/img/horseshoe@2x.png");
+  }
+}
+
+.format_handlebar {
+  background-image: url("/img/handlebar.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/img/handlebar@2x.png");
+  }
 }

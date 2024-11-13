@@ -5,26 +5,46 @@
 // desktop
 
 .benefits {
-  padding: 40px 0px 20px;
+  padding-top: 40px;
 
   @media screen and (min-width: $bp-tablet) {
-    padding: 0px 0px 24px;
-  }
-
-  @media screen and (min-width: $bp-desktop) {
-    padding: 0px 0px 48px;
+    background-color: var(--accent-color-light);
+    padding-top: 0px;
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 40px;
     font-size: 14px;
     font-weight: 300;
     color: var(--primary-dark);
     background-color: var(--decor-light);
+    border-radius: 24px;
 
-    @media screen and (min-width: $bp-desktop) {
-      font-size: 20px;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 16px 0px;
+
+      font-size: 14px;
       color: var(--primary-light);
       background-color: var(--accent-color-light);
     }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 20px;
+    }
+  }
+
+  &__list-item {
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: 340px;
+    }
+  }
+
+  &__list-item:hover {
+    font-weight: 700;
   }
 }

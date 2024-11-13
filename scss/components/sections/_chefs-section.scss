@@ -55,9 +55,12 @@
 
 .chef {
   display: flex;
+  align-items: flex-start;
+  padding-left: 10px;
   gap: 16px;
 
   @media screen and (min-width: $bp-tablet) {
+    padding-left: 0px;
     gap: 24px;
   }
 

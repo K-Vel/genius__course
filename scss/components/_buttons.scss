@@ -5,6 +5,7 @@
 // desktop
 
 .button {
+  display: block;
   padding: 10px 24px;
 
   font-size: 16px;
@@ -23,6 +24,14 @@
 
   &:hover {
     color: var(--accent-color-dark);
-    background-color: transparent;
+    background-color: var(--primary-light);
+  }
+
+  &_hero {
+    margin: 0px auto;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }
