@@ -38,13 +38,10 @@
     }
   }
 
-  &__list-item {
-    @media screen and (min-width: $bp-tablet) {
-      flex-basis: 340px;
-    }
-  }
-
   &__list-item:hover {
-    font-weight: 700;
+    @media screen and (min-width: $bp-tablet) {
+      color: var(--primary-light);
+      transform: scale(1.06);
+    }
   }
 }

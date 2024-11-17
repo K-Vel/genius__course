@@ -31,48 +31,92 @@
 }
 
 .format {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 444px;
+  padding: 24px;
   font-size: 14px;
   font-weight: 300;
-  // min-height: 444px;
+  color: var(--primary-light);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+
+  &__title {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 16px;
+    }
+  }
 }
 
-//Moditicator
+//Modificator
 
 .format_walrus {
-  background-image: url("/img/walrus.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  background-image: linear-gradient(
+      180deg,
+      rgba(49, 38, 26, 0) 55%,
+      rgba(49, 38, 26, 0.71) 73%,
+      var(--primary-dark) 100%
+    ),
+    url("/img/walrus.jpg");
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url("/img/walrus@2x.png");
+    background-image: linear-gradient(
+        180deg,
+        rgba(49, 38, 26, 0) 55%,
+        rgba(49, 38, 26, 0.71) 73%,
+        var(--primary-dark) 100%
+      ),
+      url("/img/walrus@2x.jpg");
   }
 }
 
 .format_horseshoe {
-  background-image: url("/img/horseshoe.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  background-image: linear-gradient(
+      180deg,
+      rgba(49, 38, 26, 0) 55%,
+      rgba(49, 38, 26, 0.71) 73%,
+      var(--primary-dark) 100%
+    ),
+    url("/img/horseshoe.jpg");
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url("/img/horseshoe@2x.png");
+    background-image: linear-gradient(
+        180deg,
+        rgba(49, 38, 26, 0) 55%,
+        rgba(49, 38, 26, 0.71) 73%,
+        var(--primary-dark) 100%
+      ),
+      url("/img/horseshoe@2x.jpg");
   }
 }
 
 .format_handlebar {
-  background-image: url("/img/handlebar.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  background-image: linear-gradient(
+      180deg,
+      rgba(49, 38, 26, 0) 55%,
+      rgba(49, 38, 26, 0.71) 73%,
+      var(--primary-dark) 100%
+    ),
+    url("/img/handlebar.jpg");
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url("/img/handlebar@2x.png");
+    background-image: linear-gradient(
+        180deg,
+        rgba(49, 38, 26, 0) 55%,
+        rgba(49, 38, 26, 0.71) 73%,
+        var(--primary-dark) 100%
+      ),
+      url("/img/handlebar@2x.jpg");
   }
 }

@@ -21,12 +21,13 @@
   &__inner {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
+    max-width: 710px;
     gap: 16px;
 
     @media screen and (min-width: $bp-tablet) {

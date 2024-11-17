@@ -11,29 +11,40 @@
     <!-- Header Section -->
     <header class="header">
       <div class="container">
-        <!-- Navigation -->
-        <nav class="header__navigation">
-          <a href="/" class="header__logo"
-            ><img class="" src="./img/logo.svg" alt="Логотип сучасної пекарні"
-          /></a>
-          <ul class="header__list">
-            <li>
-              <a class="header__list-item" href="#traditions-section"
-                >Наші традиції</a
-              >
-            </li>
-            <li>
-              <a class="header__list-item" href="#chefs-section">Шеф-кухарі</a>
-            </li>
-            <li>
-              <a class="header__list-item" href="#formats-section">Формати</a>
-            </li>
-            <li>
-              <a class="header__list-item" href="#contacts-section">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" class="button">Замовити дзвінок</button>
+        <div class="header__inner">
+          <!-- Navigation -->
+          <nav class="header__navigation">
+            <a href="/" class="header__logo"
+              ><img
+                class=""
+                src="./img/logo.svg"
+                alt="Логотип сучасної пекарні"
+            /></a>
+            <ul class="header__list">
+              <li>
+                <a class="header__list-item" href="#traditions-section"
+                  >Наші традиції</a
+                >
+              </li>
+              <li>
+                <a class="header__list-item" href="#chefs-section"
+                  >Шеф-кухарі</a
+                >
+              </li>
+              <li>
+                <a class="header__list-item" href="#formats-section">Формати</a>
+              </li>
+              <li>
+                <a class="header__list-item" href="#contacts-section"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="button button_header">
+            Замовити дзвінок
+          </button>
+        </div>
       </div>
     </header>
     <!-- Main Section -->
@@ -151,7 +162,7 @@
             <!-- Format -->
             <li class="formats__list-item">
               <article class="format format_walrus">
-                <h4 lang="en">Walrus</h4>
+                <h4 class="format__title" lang="en">Walrus</h4>
                 <ol>
                   <li>Площа: до 120 м2</li>
                   <li>Меню: розширене меню</li>
@@ -166,7 +177,7 @@
             <!-- Format -->
             <li class="formats__list-item">
               <article class="format format_horseshoe">
-                <h4 lang="en">Horseshoe</h4>
+                <h4 class="format__title" lang="en">Horseshoe</h4>
                 <ol>
                   <li>Площа: до 25 м2</li>
                   <li>Меню: найпопулярніші позиції меню</li>
@@ -174,11 +185,11 @@
                   <li>Посадкові місця: відсутні</li>
                 </ol>
               </article>
-            </li class="formats__list-item">
+            </li>
             <!-- Format -->
-            <li>
+            <li class="formats__list-item">
               <article class="format format_handlebar">
-                <h4 lang="en">Handlebar</h4>
+                <h4 class="format__title" lang="en">Handlebar</h4>
                 <ol>
                   <li>Площа: до 15 м2</li>
                   <li>Меню: найпопулярніші позиції меню</li>
@@ -210,80 +221,100 @@
     <!-- Footer Section -->
     <footer class="footer">
       <div class="container">
-        <!-- Navigation -->
-        <nav class="footer__navigation">
-          <a href="/" class="footer__logo"
-            ><img class="" src="./img/logo.svg" alt="Логотип сучасної пекарні"
-          /></a>
-          <ul class="footer__list">
-            <li>
-              <a class="footer__list-item" href="#traditions-section"
-                >Наші традиції</a
-              >
-            </li>
-            <li>
-              <a class="footer__list-item" href="#chefs-section">Шеф-кухарі</a>
-            </li>
-            <li>
-              <a class="footer__list-item" href="#formats-section">Формати</a>
-            </li>
-            <li>
-              <a class="footer__list-item" href="#contacts-section">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Address -->
-        <address class="footer__address">
-          <ol class="footer__address-list">
-            <li>
-              <a class="footer__address-list-item" href="tel:+380960000007"
-                >+38 (096) 000 00 07</a
-              >
-            </li>
-            <li>
-              <a
-                class="footer__address-list-item"
-                href="mailto:shopbakery@gmail.com"
-                >shopbakery@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="footer__address-list-item"
-                href="https://maps.app.goo.gl/6RPiCupo9hWw26zt6"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Україна, м. Київ, вул. Січових Стрільців 54
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <svg class="icon" width="32px" height="32px">
-                  <!-- Задаем тег и нужные размеры по шаблону в figma-->
-                  <use href="./img/incons.svg#icon-facebook"></use>
-                  <!-- Вставляем путь и через решетку ид нужной иконки-->
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <svg class="icon" width="32px" height="32px">
-                  <!-- Задаем тег и нужные размеры по шаблону в figma-->
-                  <use href="./img/incons.svg#icon-instagram"></use>
-                  <!-- Вставляем путь и через решетку ид нужной иконки-->
-                </svg>
-              </a>
-            </li>
-          </ol>
-        </address>
-        <div>
-          <p class="footer__additional-info">
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              >Політика конфіденційності</a
-            >
-          </p>
-          <p class="copyright">&copy; 2022 Дані захищені</p>
+        <div class="footer__inner">
+          <!-- Navigation -->
+          <nav class="footer__navigation">
+            <div class="footer__logo">
+              <a href="/"
+                ><img
+                  class=""
+                  src="./img/logo.svg"
+                  alt="Логотип сучасної пекарні"
+              /></a>
+            </div>
+            <ul class="footer__list">
+              <li>
+                <a class="footer__list-item" href="#traditions-section"
+                  >Наші традиції</a
+                >
+              </li>
+              <li>
+                <a class="footer__list-item" href="#chefs-section"
+                  >Шеф-кухарі</a
+                >
+              </li>
+              <li>
+                <a class="footer__list-item" href="#formats-section">Формати</a>
+              </li>
+              <li>
+                <a class="footer__list-item" href="#contacts-section"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__additional-info">
+            <!-- Address -->
+            <address class="footer__address">
+              <ol class="footer__address-list">
+                <li>
+                  <a class="footer__address-list-item" href="tel:+380960000007"
+                    >+38 (096) 000 00 07</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__address-list-item"
+                    href="mailto:shopbakery@gmail.com"
+                    >shopbakery@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__address-list-item"
+                    href="https://maps.app.goo.gl/6RPiCupo9hWw26zt6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Україна, м. Київ, <br />
+                    вул. Січових Стрільців 54
+                  </a>
+                </li>
+              </ol>
+              <ul class="footer__media-list">
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon" width="32px" height="32px">
+                      <!-- Задаем тег и нужные размеры по шаблону в figma-->
+                      <use href="./img/incons.svg#icon-facebook"></use>
+                      <!-- Вставляем путь и через решетку ид нужной иконки-->
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon" width="32px" height="32px">
+                      <!-- Задаем тег и нужные размеры по шаблону в figma-->
+                      <use href="./img/incons.svg#icon-instagram"></use>
+                      <!-- Вставляем путь и через решетку ид нужной иконки-->
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <div class="footer__policy">
+              <p>
+                <a
+                  class="footer__confidentiality"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Політика конфіденційності</a
+                >
+              </p>
+              <p class="copyright">&copy; 2022 Дані захищені</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
