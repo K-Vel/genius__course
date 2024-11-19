@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- Script -->
+    <script defer type="module" src="./js/modal.js"></script>
+    <script defer type="module" src="./js/menu-modal.js"></script>
+    <script defer type="module" src="./js/utils.js"></script>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script defer src="./js/swiper.js"></script>
+    <!-- Title -->
     <title>Сучасна кухня</title>
   </head>
   <body>
@@ -41,7 +56,10 @@
               </li>
             </ul>
           </nav>
-          <button type="button" class="button button_header">
+          <button
+            type="button"
+            class="callback-button callback-button_header modal-btn-open"
+          >
             Замовити дзвінок
           </button>
         </div>
@@ -54,7 +72,10 @@
           <h1 class="hero__title">
             <span class="accent-color-light">Сучасна</span> пекарня
           </h1>
-          <button type="button" class="button button_hero">
+          <button
+            type="button"
+            class="callback-button callback-button_hero modal-btn-open"
+          >
             Замовити дзвінок
           </button>
         </div>
@@ -124,7 +145,10 @@
                 <div class="chef__text">
                   <h3>Настя</h3>
                   <p>Привіт, я Настя!</p>
-                  <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
+                  <p>
+                    Вже 10 років, я втілюю <br />
+                    у життя цікаві та смачні ідеї.
+                  </p>
                   <p>Я випічу для вас найсмачніщі вироби!</p>
                 </div>
               </article>
@@ -157,64 +181,87 @@
       <section class="formats" id="formats-section">
         <div class="container">
           <h2 class="formats__title">Формати</h2>
-          <!-- Formats List -->
-          <ul class="formats__list">
-            <!-- Format -->
-            <li class="formats__list-item">
-              <article class="format format_walrus">
-                <h4 class="format__title" lang="en">Walrus</h4>
-                <ol>
-                  <li>Площа: до 120 м2</li>
-                  <li>Меню: розширене меню</li>
-                  <li>
-                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                    офіціанти-різнороби
-                  </li>
-                  <li>Посадкові місця: є</li>
-                </ol>
-              </article>
-            </li>
-            <!-- Format -->
-            <li class="formats__list-item">
-              <article class="format format_horseshoe">
-                <h4 class="format__title" lang="en">Horseshoe</h4>
-                <ol>
-                  <li>Площа: до 25 м2</li>
-                  <li>Меню: найпопулярніші позиції меню</li>
-                  <li>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</li>
-                  <li>Посадкові місця: відсутні</li>
-                </ol>
-              </article>
-            </li>
-            <!-- Format -->
-            <li class="formats__list-item">
-              <article class="format format_handlebar">
-                <h4 class="format__title" lang="en">Handlebar</h4>
-                <ol>
-                  <li>Площа: до 15 м2</li>
-                  <li>Меню: найпопулярніші позиції меню</li>
-                  <li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
-                  <li>Посадкові місця: відсутні</li>
-                </ol>
-              </article>
-            </li>
-          </ul>
+          <div class="formats__carousel">
+            <button class="carousel-button" type="button">
+              <svg width="16px" height="16px">
+                <use href="./img/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <!-- Formats List -->
+            <ul class="formats__list">
+              <!-- Format -->
+              <li class="formats__list-item">
+                <article class="format format_walrus">
+                  <h4 class="format__title" lang="en">Walrus</h4>
+                  <ol>
+                    <li>Площа: до 120 м2</li>
+                    <li>Меню: розширене меню</li>
+                    <li>
+                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби
+                    </li>
+                    <li>Посадкові місця: є</li>
+                  </ol>
+                </article>
+              </li>
+              <!-- Format -->
+              <li class="formats__list-item">
+                <article class="format format_horseshoe">
+                  <h4 class="format__title" lang="en">Horseshoe</h4>
+                  <ol>
+                    <li>Площа: до 25 м2</li>
+                    <li>Меню: найпопулярніші позиції меню</li>
+                    <li>
+                      Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
+                    </li>
+                    <li>Посадкові місця: відсутні</li>
+                  </ol>
+                </article>
+              </li>
+              <!-- Format -->
+              <li class="formats__list-item">
+                <article class="format format_handlebar">
+                  <h4 class="format__title" lang="en">Handlebar</h4>
+                  <ol>
+                    <li>Площа: до 15 м2</li>
+                    <li>Меню: найпопулярніші позиції меню</li>
+                    <li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
+                    <li>Посадкові місця: відсутні</li>
+                  </ol>
+                </article>
+              </li>
+            </ul>
+            <button class="carousel-button" type="button">
+              <svg class="reversed" width="16px" height="16px">
+                <use href="./img/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section class="contacts" id="contacts-section">
         <div class="container">
-          <h2 class="contacts__title">Приєднуйся до мережі пекарень</h2>
-          <p class="accent-color-dark">
-            Заповни форму, щоб ми звʼязались з тобою!
-          </p>
-          <form></form>
-          <!-- <iframe
-            title="Address"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163447036115!2d30.48869837606083!3d50.45668098691572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2spl!4v1731001855525!5m2!1suk!2spl"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe> -->
+          <div class="contacts__inner">
+            <div class="contacts__content">
+              <h2 class="contacts__title">
+                Приєднуйся до <br />
+                мережі пекарень
+              </h2>
+              <p class="accent-color-dark">
+                Заповни форму, щоб ми звʼязались з тобою!
+              </p>
+              <!-- Form -->
+              <form></form>
+            </div>
+            <iframe
+              class="contacts__map"
+              title="Address"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163447036115!2d30.48869837606083!3d50.45668098691572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2spl!4v1731001855525!5m2!1suk!2spl"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
@@ -283,20 +330,16 @@
               </ol>
               <ul class="footer__media-list">
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon" width="32px" height="32px">
-                      <!-- Задаем тег и нужные размеры по шаблону в figma-->
-                      <use href="./img/incons.svg#icon-facebook"></use>
-                      <!-- Вставляем путь и через решетку ид нужной иконки-->
+                  <a href="/" target="_blank" rel="noopener noreferrer">
+                    <svg class="media-icon" width="32px" height="32px">
+                      <use href="./img/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon" width="32px" height="32px">
-                      <!-- Задаем тег и нужные размеры по шаблону в figma-->
-                      <use href="./img/incons.svg#icon-instagram"></use>
-                      <!-- Вставляем путь и через решетку ид нужной иконки-->
+                  <a href="/" target="_blank" rel="noopener noreferrer">
+                    <svg class="media-icon" width="32px" height="32px">
+                      <use href="./img/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -318,5 +361,59 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop hidden">
+      <div class="modal">
+        <button class="modal__button modal-btn-close" type="button">
+          <svg width="16px" height="16px">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="modal__inner">
+          <h2 class="modal__title">Замовити дзвінок</h2>
+          <p class="modal__text accent-color-dark">
+            Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+          </p>
+          <form class="form" action="" method="" name="modal-form">
+            <div class="form__field">
+              <label class="visually-hidden" for="username">Username:</label>
+              <input
+                class="form__input"
+                type="text"
+                id="username"
+                name="username"
+                required
+                placeholder="Ім’я"
+              />
+            </div>
+            <div class="form__field">
+              <label class="visually-hidden" for="phone"
+                >Enter your phone number:</label
+              >
+              <input
+                class="form__input"
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="”^\+[0-9]{12}”"
+                required
+                placeholder="Телефон"
+              />
+            </div>
+            <div class="form__field">
+              <label class="visually-hidden" for="email">Email</label>
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                required
+                placeholder="Електронна пошта"
+              />
+            </div>
+            <button type="submit" value="Submit">button</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

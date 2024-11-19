@@ -4,7 +4,7 @@
 // tablet
 // desktop
 
-.button {
+.callback-button {
   display: block;
   padding: 10px 24px;
 
@@ -27,6 +27,14 @@
     background-color: var(--primary-light);
   }
 
+  // Modificator
+  &_header {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
   &_hero {
     margin: 0px auto;
 
@@ -36,11 +44,54 @@
   }
 }
 
-// Modificator
-
-.button_header {
+.carousel-button {
   display: none;
-  @media screen and (min-width: $bp-desktop) {
-    display: block;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border: 1px solid var(--primary-dark);
+  border-radius: 50%;
+  cursor: pointer;
+
+  //for icon
+  fill: var(--primary-dark);
+
+  &:hover {
+    background-color: var(--primary-dark);
+
+    // for icon
+    fill: var(--primary-light);
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+}
+
+// Modal window button
+.modal__button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media screen and (min-width: $bp-tablet) {
+    top: 42px;
+    right: 42px;
+  }
+
+  &:hover {
+    border: 2px solid var(--accent-color-dark);
+    border-radius: 50%;
   }
 }
