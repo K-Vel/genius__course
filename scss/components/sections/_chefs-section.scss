@@ -29,6 +29,7 @@
       margin-bottom: 80px;
     }
 
+    //Decoration
     &::before,
     &::after {
       content: "";
@@ -56,6 +57,7 @@
     }
   }
 
+  //Content
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +83,7 @@
   }
 }
 
+//Chef
 .chef {
   display: flex;
   align-items: flex-start;

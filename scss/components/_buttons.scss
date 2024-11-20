@@ -42,6 +42,18 @@
       display: none;
     }
   }
+
+  &_form-modal {
+    margin: 0px auto 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0px auto 24px;
+    }
+  }
+
+  &_form-contacts {
+    margin: 0px auto 16px;
+  }
 }
 
 .carousel-button {

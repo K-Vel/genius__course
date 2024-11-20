@@ -5,10 +5,20 @@
 // desktop
 
 .form {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
   text-align: start;
+
+  //   Modifier
+  &__field_modal {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__field_contacts {
+    margin-bottom: 24px;
+  }
 
   &__input {
     padding: 16px 42px;
@@ -33,5 +43,20 @@
     &:focus::placeholder {
       color: var(--primary-dark);
     }
+  }
+
+  &__policy {
+    max-width: 220px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-dark);
+  }
+
+  &__confidentiality {
+    color: var(--primary-dark);
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 }

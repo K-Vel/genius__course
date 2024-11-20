@@ -24,6 +24,7 @@
     background-position: center;
   }
 
+  //Decoration
   &::before,
   &::after {
     content: "";
@@ -31,6 +32,7 @@
     bottom: 0px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
   }
 
   &::before {
@@ -89,6 +91,8 @@
       background-image: url("../img/footer-big-bread@2x.png");
     }
   }
+
+  //Content
   &__inner {
     display: flex;
     flex-direction: column;
@@ -141,6 +145,7 @@
 
   &__list-item {
     color: var(--primary-light);
+    transition: color 0.3s;
 
     &:hover {
       color: var(--accent-color-light);
