@@ -48,16 +48,23 @@
 /* Styling */
 @import "./utils/utils.scss";
 
-// Content
-@import "./components/buttons.scss";
+// Blocks
+// Buttons
+@import "./components/blocks/buttons.scss";
 
 //Backdrop
-@import "./components/backdrop.scss";
+@import "./components/blocks/backdrop.scss";
+
+//Backdrop
+@import "./components/blocks/modal.scss";
 
 //Form
-@import "./components/form.scss";
+@import "./components/blocks/form.scss";
 
-// Sections
+//Chef
+@import "./components/blocks/chef.scss";
+
+//Sections
 //Header
 @import "./components/sections/header.scss";
 

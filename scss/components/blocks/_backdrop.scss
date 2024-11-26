@@ -1,0 +1,37 @@
+/* Backdrop */
+
+// mobile
+// tablet
+// desktop
+
+.backdrop {
+  position: fixed; // фиксируем позицию
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px 0px;
+  background-color: rgba(143, 121, 110, 0.4);
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 100;
+
+  /* JS */
+  &.js-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  //
+
+  // Modificator
+  &--modal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      align-items: center;
+    }
+  }
+  //
+}

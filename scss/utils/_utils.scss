@@ -1,3 +1,4 @@
+// Position
 .visually-hidden {
   position: absolute;
   left: -10000px;
@@ -7,6 +8,11 @@
   overflow: hidden;
 }
 
+.reversed {
+  transform: rotate(180deg);
+}
+
+// Text
 .accent-color-light {
   color: var(--accent-color-light);
 }
@@ -32,12 +38,9 @@
     font-size: 14px;
   }
 }
+
 .text-limited {
   @media screen and (min-width: $bp-tablet) {
     max-width: 340px;
   }
-}
-
-.reversed {
-  transform: rotate(180deg);
 }

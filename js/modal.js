@@ -5,8 +5,8 @@ const modalBtnOpenList = document.querySelectorAll(".modal-btn-open");
 const modalBtnClose = document.querySelector(".modal-btn-close");
 
 const toggleModal = () => {
-  backdrop.classList.toggle("hidden");
-  if (backdrop.classList.contains("hidden")) {
+  backdrop.classList.toggle("js-hidden");
+  if (backdrop.classList.contains("js-hidden")) {
     enableScroll();
   } else {
     disableScroll();

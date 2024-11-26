@@ -89,7 +89,7 @@
   }
 
   //Modificator
-  &_walrus {
+  &--walrus {
     background-image: linear-gradient(
         180deg,
         rgba(49, 38, 26, 0) 55%,
@@ -110,8 +110,10 @@
         url("/img/walrus@2x.jpg");
     }
   }
+  //
 
-  &_horseshoe {
+  //Modificator
+  &--horseshoe {
     background-image: linear-gradient(
         180deg,
         rgba(49, 38, 26, 0) 55%,
@@ -132,8 +134,10 @@
         url("/img/horseshoe@2x.jpg");
     }
   }
+  //
 
-  &_handlebar {
+  //Modificator
+  &--handlebar {
     background-image: linear-gradient(
         180deg,
         rgba(49, 38, 26, 0) 55%,
@@ -154,4 +158,5 @@
         url("/img/handlebar@2x.jpg");
     }
   }
+  //
 }
