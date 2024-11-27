@@ -46,6 +46,16 @@
     &:focus::placeholder {
       color: var(--primary-dark);
     }
+
+    //Modificator
+    &--contacts {
+      padding: 8px 24px;
+
+      @media screen and (min-width: $bp-tablet) {
+        padding: 16px 42px;
+      }
+    }
+    //
   }
 
   &__policy {

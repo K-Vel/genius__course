@@ -12,6 +12,10 @@
   transform: rotate(180deg);
 }
 
+.margin-top-24 {
+  margin-top: 24px;
+}
+
 // Text
 .accent-color-light {
   color: var(--accent-color-light);
@@ -43,4 +47,9 @@
   @media screen and (min-width: $bp-tablet) {
     max-width: 340px;
   }
+}
+
+//Other
+.no-scroll {
+  overflow: hidden;
 }

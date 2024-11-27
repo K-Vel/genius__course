@@ -3,7 +3,7 @@ import { disableScroll, enableScroll } from "./utils.js";
 const mobileMenu = document.querySelector(".mobile-menu");
 const menuBtnOpen = document.querySelector(".menu-btn-open");
 const menuBtnClose = document.querySelector(".menu-btn-close");
-const navigationItems = document.querySelectorAll(".navigation__item");
+const navigationItems = document.querySelectorAll(".mobile-menu__list-item");
 
 const toggleMenu = () => {
   mobileMenu.classList.toggle("is-open");

@@ -57,6 +57,7 @@
   }
 }
 
+//Carousel buttons
 .carousel-button {
   display: none;
   width: 44px;
@@ -84,7 +85,8 @@
   }
 }
 
-// Modal window button
+// Modal window buttons
+.mobile-menu__button,
 .modal__button {
   position: absolute;
   top: 24px;
@@ -106,5 +108,47 @@
   &:hover {
     border: 2px solid var(--accent-color-dark);
     border-radius: 50%;
+  }
+}
+
+/* Burger button */
+.burger-button {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  // for icon
+  fill: var(--primary-light);
+  &:hover {
+    fill: var(--primary-dark);
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    display: none;
+  }
+}
+
+/* Pagination buttons */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  &__button {
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--decor-dark);
+    cursor: pointer;
+
+    &_active {
+      background-color: var(--accent-color-dark);
+    }
   }
 }

@@ -57,11 +57,53 @@
             </ul>
           </nav>
           <button
-            type="button"
             class="callback-button callback-button_header modal-btn-open"
+            type="button"
           >
             Замовити дзвінок
           </button>
+          <button type="button" class="burger-button menu-btn-open">
+            <svg width="24px" height="24px">
+              <use href="./img/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__button menu-btn-close" type="button">
+              <svg width="16px" height="16px">
+                <use href="./img/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="mobile-menu__navigation">
+              <a href="/" class="mobile-menu__logo"
+                ><img
+                  class=""
+                  src="./img/mobile-menu-logo.svg"
+                  alt="Логотип сучасної пекарні"
+              /></a>
+              <ul class="mobile-menu__list">
+                <li>
+                  <a class="mobile-menu__list-item" href="#traditions-section"
+                    >Наші традиції</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile-menu__list-item" href="#chefs-section"
+                    >Шеф-кухарі</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile-menu__list-item" href="#formats-section"
+                    >Формати</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile-menu__list-item" href="#contacts-section"
+                    >Контакти</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -182,60 +224,110 @@
         <div class="container">
           <h2 class="formats__title">Формати</h2>
           <div class="formats__carousel">
-            <button class="carousel-button" type="button">
+            <button class="carousel-button prev" type="button">
               <svg width="16px" height="16px">
                 <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
             </button>
             <!-- Formats List -->
-            <ul class="formats__list">
-              <!-- Format -->
-              <li class="formats__list-item">
-                <article class="format format--walrus">
-                  <h4 class="format__title" lang="en">Walrus</h4>
-                  <ol>
-                    <li>Площа: до 120 м2</li>
-                    <li>Меню: розширене меню</li>
-                    <li>
-                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                      офіціанти-різнороби
-                    </li>
-                    <li>Посадкові місця: є</li>
-                  </ol>
-                </article>
-              </li>
-              <!-- Format -->
-              <li class="formats__list-item">
-                <article class="format format--horseshoe">
-                  <h4 class="format__title" lang="en">Horseshoe</h4>
-                  <ol>
-                    <li>Площа: до 25 м2</li>
-                    <li>Меню: найпопулярніші позиції меню</li>
-                    <li>
-                      Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
-                    </li>
-                    <li>Посадкові місця: відсутні</li>
-                  </ol>
-                </article>
-              </li>
-              <!-- Format -->
-              <li class="formats__list-item">
-                <article class="format format--handlebar">
-                  <h4 class="format__title" lang="en">Handlebar</h4>
-                  <ol>
-                    <li>Площа: до 15 м2</li>
-                    <li>Меню: найпопулярніші позиції меню</li>
-                    <li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
-                    <li>Посадкові місця: відсутні</li>
-                  </ol>
-                </article>
-              </li>
-            </ul>
-            <button class="carousel-button" type="button">
+            <div class="swiper-container formats__swiper">
+              <ul class="swiper-wrapper">
+                <!-- Format -->
+                <li class="swiper-slide">
+                  <article class="format format--walrus">
+                    <h4 class="format__title" lang="en">Walrus</h4>
+                    <ol>
+                      <li>Площа: до 120 м2</li>
+                      <li>Меню: розширене меню</li>
+                      <li>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </li>
+                      <li>Посадкові місця: є</li>
+                    </ol>
+                  </article>
+                </li>
+                <!-- Format -->
+                <li class="swiper-slide">
+                  <article class="format format--horseshoe">
+                    <h4 class="format__title" lang="en">Horseshoe</h4>
+                    <ol>
+                      <li>Площа: до 25 м2</li>
+                      <li>Меню: найпопулярніші позиції меню</li>
+                      <li>
+                        Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
+                      </li>
+                      <li>Посадкові місця: відсутні</li>
+                    </ol>
+                  </article>
+                </li>
+                <!-- Format -->
+                <li class="swiper-slide">
+                  <article class="format format--handlebar">
+                    <h4 class="format__title" lang="en">Handlebar</h4>
+                    <ol>
+                      <li>Площа: до 15 м2</li>
+                      <li>Меню: найпопулярніші позиції меню</li>
+                      <li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
+                      <li>Посадкові місця: відсутні</li>
+                    </ol>
+                  </article>
+                </li>
+                <!-- Format -->
+                <li class="swiper-slide">
+                  <article class="format format--walrus">
+                    <h4 class="format__title" lang="en">Walrus</h4>
+                    <ol>
+                      <li>Площа: до 120 м2</li>
+                      <li>Меню: розширене меню</li>
+                      <li>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </li>
+                      <li>Посадкові місця: є</li>
+                    </ol>
+                  </article>
+                </li>
+                <!-- Format -->
+                <li class="swiper-slide">
+                  <article class="format format--horseshoe">
+                    <h4 class="format__title" lang="en">Horseshoe</h4>
+                    <ol>
+                      <li>Площа: до 25 м2</li>
+                      <li>Меню: найпопулярніші позиції меню</li>
+                      <li>
+                        Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
+                      </li>
+                      <li>Посадкові місця: відсутні</li>
+                    </ol>
+                  </article>
+                </li>
+                <!-- Format -->
+                <li class="swiper-slide">
+                  <article class="format format--handlebar">
+                    <h4 class="format__title" lang="en">Handlebar</h4>
+                    <ol>
+                      <li>Площа: до 15 м2</li>
+                      <li>Меню: найпопулярніші позиції меню</li>
+                      <li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
+                      <li>Посадкові місця: відсутні</li>
+                    </ol>
+                  </article>
+                </li>
+              </ul>
+            </div>
+            <button class="carousel-button next" type="button">
               <svg class="reversed" width="16px" height="16px">
                 <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
             </button>
+          </div>
+          <!-- Decoration ellipses-icons -->
+          <div class="pagination margin-top-24">
+            <span class="pagination__button"></span>
+            <span class="pagination__button"></span>
+            <span class="pagination__button"></span>
+            <span class="pagination__button"></span>
           </div>
         </div>
       </section>
@@ -257,7 +349,7 @@
                     >Username:</label
                   >
                   <input
-                    class="form__input"
+                    class="form__input form__input--contacts"
                     type="text"
                     id="username"
                     name="username"
@@ -270,7 +362,7 @@
                     >Enter your phone number:</label
                   >
                   <input
-                    class="form__input"
+                    class="form__input form__input--contacts"
                     type="tel"
                     id="phone"
                     name="phone"
@@ -282,7 +374,7 @@
                 <div class="form__field form__field--contacts">
                   <label class="visually-hidden" for="email">Email</label>
                   <input
-                    class="form__input"
+                    class="form__input form__input--contacts"
                     type="email"
                     name="email"
                     pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"

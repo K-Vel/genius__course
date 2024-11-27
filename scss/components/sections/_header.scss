@@ -23,10 +23,14 @@
   // Navigation
   &__navigation {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-grow: 1;
     gap: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: center;
+    }
   }
 
   &__list {
