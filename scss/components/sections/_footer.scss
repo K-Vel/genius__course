@@ -55,12 +55,12 @@
       height: 122px;
       width: 180px;
       background-image: url("../img/decoration/footer-small-bread.png");
-    }
 
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url("../img/decoration/footer-small-bread@2x.png");
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../img/decoration/footer-small-bread@2x.png");
+      }
     }
   }
 
@@ -74,7 +74,7 @@
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("../img/decoration/footer-small-bread@2x.png");
+      background-image: url("../img/decoration/footer-mobile-small-bread@2x.png");
     }
 
     // Tablet
@@ -83,12 +83,12 @@
       height: 188px;
       width: 378px;
       background-image: url("../img/decoration/footer-big-bread.png");
-    }
 
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url("../img/decoration/footer-big-bread@2x.png");
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../img/decoration/footer-big-bread@2x.png");
+      }
     }
   }
 
@@ -166,12 +166,14 @@
   }
 
   &__address {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 16px;
     flex-basis: calc((100% - 20px) / 2);
     font-size: 14px;
     font-weight: 300;
+    z-index: 9;
 
     @media screen and (min-width: $bp-desktop) {
       font-size: 16px;
@@ -190,6 +192,7 @@
 
   &__address-list-item {
     color: var(--primary-light);
+    transition: color 1s ease;
 
     &:hover {
       color: var(--accent-color-light);
@@ -220,6 +223,7 @@
     font-size: 14px;
     font-weight: 300;
     color: var(--primary-light);
+    transition: color 1s ease;
 
     @media screen and (min-width: $bp-desktop) {
       font-size: 16px;
@@ -233,6 +237,7 @@
 
 .media-icon {
   fill: var(--primary-light);
+  transition: fill 1s ease;
 
   &:hover {
     fill: var(--accent-color-light);

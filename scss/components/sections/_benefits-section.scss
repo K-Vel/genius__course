@@ -39,10 +39,16 @@
     }
   }
 
-  &__list-item:hover {
+  &__list-item {
     @media screen and (min-width: $bp-tablet) {
-      color: var(--primary-light);
-      transform: scale(1.06);
+      transition: color 1s ease;
+    }
+
+    &:hover {
+      @media screen and (min-width: $bp-tablet) {
+        color: var(--primary-light);
+        transform: scale(1.06);
+      }
     }
   }
 }

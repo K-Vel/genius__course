@@ -15,6 +15,7 @@
   border: 2px solid var(--accent-color-light);
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 1s ease, color 1s ease;
 
   @media screen and (min-width: $bp-desktop) {
     padding: 16px 32px;
@@ -28,7 +29,7 @@
   }
 
   // Modificator
-  &_header {
+  &--header {
     display: none;
     @media screen and (min-width: $bp-desktop) {
       display: block;
@@ -36,24 +37,32 @@
   }
   //
 
-  &_hero {
+  // Modificator
+  &--hero {
     margin: 0px auto;
 
     @media screen and (min-width: $bp-desktop) {
       display: none;
     }
   }
+  //
 
-  &_form-modal {
+  // Modificator
+  &--form-modal {
     margin: 0px auto 16px;
 
     @media screen and (min-width: $bp-tablet) {
       margin: 0px auto 24px;
     }
   }
+  //
 
-  &_form-contacts {
-    margin: 0px auto 16px;
+  &--form-contacts {
+    margin: 0px auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0px auto 16px;
+    }
   }
 }
 
@@ -66,22 +75,23 @@
   border: 1px solid var(--primary-dark);
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color 1s ease, fill 1s ease;
 
   //for icon
   fill: var(--primary-dark);
-
-  &:hover {
-    background-color: var(--primary-dark);
-
-    // for icon
-    fill: var(--primary-light);
-  }
 
   @media screen and (min-width: $bp-tablet) {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+  }
+
+  &:hover {
+    background-color: var(--primary-dark);
+
+    // for icon
+    fill: var(--primary-light);
   }
 }
 
@@ -99,6 +109,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: border-radius 1s ease, border 1s ease;
 
   @media screen and (min-width: $bp-tablet) {
     top: 42px;
@@ -119,9 +130,11 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: fill 1s ease;
 
   // for icon
   fill: var(--primary-light);
+
   &:hover {
     fill: var(--primary-dark);
   }
@@ -136,6 +149,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 4px;
   gap: 24px;
 
   &__button {

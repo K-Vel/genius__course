@@ -6,9 +6,9 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
     <!-- Script -->
-    <script defer type="module" src="./js/modal.js"></script>
-    <script defer type="module" src="./js/menu-modal.js"></script>
-    <script defer type="module" src="./js/utils.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/menu-modal.js"></script>
+    <script type="module" src="./js/utils.js"></script>
     <!-- Swiper -->
     <link
       rel="stylesheet"
@@ -57,7 +57,7 @@
             </ul>
           </nav>
           <button
-            class="callback-button callback-button_header modal-btn-open"
+            class="callback-button callback-button--header modal-btn-open"
             type="button"
           >
             Замовити дзвінок
@@ -116,7 +116,7 @@
           </h1>
           <button
             type="button"
-            class="callback-button callback-button_hero modal-btn-open"
+            class="callback-button callback-button--hero modal-btn-open"
           >
             Замовити дзвінок
           </button>
@@ -323,7 +323,7 @@
             </button>
           </div>
           <!-- Decoration ellipses-icons -->
-          <div class="pagination margin-top-24">
+          <div class="pagination">
             <span class="pagination__button"></span>
             <span class="pagination__button"></span>
             <span class="pagination__button"></span>
@@ -343,52 +343,55 @@
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
               <!-- Form -->
-              <form class="form" action="" method="" name="contacts-form">
+              <form class="form" name="contacts-form">
                 <div class="form__field form__field--contacts">
-                  <label class="visually-hidden" for="username"
+                  <label class="visually-hidden" for="username-contacts"
                     >Username:</label
                   >
                   <input
                     class="form__input form__input--contacts"
                     type="text"
-                    id="username"
-                    name="username"
+                    id="username-contacts"
+                    name="username-contacts"
                     required
                     placeholder="Ім’я"
                   />
                 </div>
                 <div class="form__field form__field--contacts">
-                  <label class="visually-hidden" for="phone"
+                  <label class="visually-hidden" for="phone-contacts"
                     >Enter your phone number:</label
                   >
                   <input
                     class="form__input form__input--contacts"
                     type="tel"
-                    id="phone"
-                    name="phone"
+                    id="phone-contacts"
+                    name="phone-contacts"
                     pattern="”^\+[0-9]{12}”"
                     required
                     placeholder="Телефон"
                   />
                 </div>
                 <div class="form__field form__field--contacts">
-                  <label class="visually-hidden" for="email">Email</label>
+                  <label class="visually-hidden" for="email-contacts"
+                    >Email</label
+                  >
                   <input
                     class="form__input form__input--contacts"
                     type="email"
-                    name="email"
+                    id="email-contacts"
+                    name="email-contacts"
                     pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
                     required
                     placeholder="Електронна пошта"
                   />
                 </div>
                 <button
-                  class="callback-button callback-button_form-contacts"
+                  class="callback-button callback-button--form-contacts"
                   type="submit"
                 >
                   Замовити дзвінок
                 </button>
-                <p class="form__policy">
+                <p class="form__policy form__policy--contacts">
                   Натискаючи на кнопку я погоджуюсь з
                   <a
                     class="form__confidentiality"
@@ -520,45 +523,48 @@
           <p class="modal__text accent-color-dark">
             Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
           </p>
-          <form class="form" action="" method="" name="modal-form">
+          <form class="form" name="modal-form">
             <div class="form__field form__field--modal">
-              <label class="visually-hidden" for="username">Username:</label>
+              <label class="visually-hidden" for="username-modal"
+                >Username:</label
+              >
               <input
                 class="form__input"
                 type="text"
-                id="username"
-                name="username"
+                id="username-modal"
+                name="username-modal"
                 required
                 placeholder="Ім’я"
               />
             </div>
             <div class="form__field form__field--modal">
-              <label class="visually-hidden" for="phone"
+              <label class="visually-hidden" for="phone-modal"
                 >Enter your phone number:</label
               >
               <input
                 class="form__input"
                 type="tel"
-                id="phone"
-                name="phone"
+                id="phone-modal"
+                name="phone-modal"
                 pattern="”^\+[0-9]{12}”"
                 required
                 placeholder="Телефон"
               />
             </div>
             <div class="form__field form__field--modal">
-              <label class="visually-hidden" for="email">Email</label>
+              <label class="visually-hidden" for="email-modal">Email</label>
               <input
                 class="form__input"
                 type="email"
-                name="email"
+                id="email-modal"
+                name="email-modal"
                 pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
                 required
                 placeholder="Електронна пошта"
               />
             </div>
             <button
-              class="callback-button callback-button_form-modal"
+              class="callback-button callback-button--form-modal"
               type="submit"
             >
               Замовити дзвінок

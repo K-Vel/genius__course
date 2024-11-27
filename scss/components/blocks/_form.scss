@@ -67,6 +67,16 @@
     color: var(--primary-dark);
   }
 
+  //Modificator
+  &__policy--contacts {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+  //
+
   &__confidentiality {
     color: var(--primary-dark);
     text-decoration: underline;

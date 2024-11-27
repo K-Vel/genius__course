@@ -17,14 +17,14 @@
 
   &__title {
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 4px;
 
     @media screen and (min-width: $bp-tablet) {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     @media screen and (min-width: $bp-desktop) {
-      margin-bottom: 80px;
+      margin-bottom: 60px;
     }
   }
 
@@ -44,6 +44,7 @@
 
   &__swiper {
     overflow: hidden;
+    padding: 20px 8px;
   }
 
   // for JS
@@ -59,7 +60,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 300px;
+  height: 442px;
   padding: 24px;
   font-size: 14px;
   font-weight: 300;
@@ -71,15 +72,15 @@
   transition: transform 0.3s;
 
   @media screen and (min-width: $bp-tablet) {
-    height: 228px;
+    height: 442px;
+
+    &:hover {
+      transform: scale(1.06);
+    }
   }
 
   @media screen and (min-width: $bp-desktop) {
     height: 442px;
-  }
-
-  &:hover {
-    transform: scale(1.06);
   }
 
   &__title {

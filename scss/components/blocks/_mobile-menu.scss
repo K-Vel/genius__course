@@ -59,6 +59,7 @@
 
   &__list-item {
     color: var(--primary-dark);
+    transition: color 1s ease;
 
     &:hover {
       font-weight: 600;
