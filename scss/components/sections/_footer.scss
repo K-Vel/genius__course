@@ -192,7 +192,7 @@
 
   &__address-list-item {
     color: var(--primary-light);
-    transition: color 1s ease;
+    transition: color 0.2s ease;
 
     &:hover {
       color: var(--accent-color-light);
@@ -203,6 +203,7 @@
     display: flex;
     justify-content: center;
     gap: 22px;
+
     @media screen and (min-width: $bp-tablet) {
       justify-content: flex-start;
     }
@@ -223,7 +224,7 @@
     font-size: 14px;
     font-weight: 300;
     color: var(--primary-light);
-    transition: color 1s ease;
+    transition: color 0.2s ease;
 
     @media screen and (min-width: $bp-desktop) {
       font-size: 16px;
@@ -237,7 +238,7 @@
 
 .media-icon {
   fill: var(--primary-light);
-  transition: fill 1s ease;
+  transition: fill 0.2s ease;
 
   &:hover {
     fill: var(--accent-color-light);

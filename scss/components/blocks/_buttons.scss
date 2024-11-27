@@ -15,7 +15,7 @@
   border: 2px solid var(--accent-color-light);
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 1s ease, color 1s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 
   @media screen and (min-width: $bp-desktop) {
     padding: 16px 32px;
@@ -75,7 +75,7 @@
   border: 1px solid var(--primary-dark);
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 1s ease, fill 1s ease;
+  transition: background-color 0.2s ease, fill 0.2s ease;
 
   //for icon
   fill: var(--primary-dark);
@@ -109,7 +109,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  transition: border-radius 1s ease, border 1s ease;
+  transition: border-radius 0.2s ease, border 0.2s ease;
 
   @media screen and (min-width: $bp-tablet) {
     top: 42px;
@@ -130,7 +130,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transition: fill 1s ease;
+  transition: fill 0.2s ease;
 
   // for icon
   fill: var(--primary-light);
